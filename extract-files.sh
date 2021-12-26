@@ -55,6 +55,26 @@ while [ "$1" != "" ]; do
     shift
 done
 
+function blob_fixup {
+    case "${1}" in
+        vendor/lib/llibladder.so)
+            patchelf --add-needed "libunwindstack-v28.so" "${2}"
+            patchelf --add-needed "libbacktrace-v28.so" "${2}"
+            ;;
+        vendor/lib/libudf.so)
+             patchelf --add-needed "libunwindstack-v28.so" "${2}"
+             patchelf --add-needed "libbacktrace-v28.so" "${2}"
+            ;;
+        vendor/lib64/libladder.so)
+             patchelf --add-needed "libunwindstack-v28.so" "${2}"
+             patchelf --add-needed "libbacktrace-v28.so" "${2}"
+            ;;
+        vendor/lib64/libudf.so)
+             patchelf --add-needed "libunwindstack-v28.so" "${2}"
+             patchelf --add-needed "libbacktrace-v28.so" "${2}"
+            ;;
+    esac
+}
 if [ -z "${SRC}" ]; then
     SRC=adb
 fi

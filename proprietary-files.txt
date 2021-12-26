@@ -570,6 +570,7 @@ vendor/lib/libOpenCL.so
 vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/libOpenCL.so
 
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
@@ -584,6 +585,8 @@ vendor/lib64/hw/gatekeeper.trustkernel.so::vendor/lib64/hw/kmsetkey.mt6771.so
 vendor/lib/hw/gatekeeper.trustkernel.so:vendor/lib/hw/kmsetkey.mt6771.so
 vendor/bin/meta_tst
 vendor/lib64/libkmsetkey.so
+vendor/lib/hw/kmsetkey.trustkernel.so
+vendor/lib64/hw/kmsetkey.trustkernel.so
 
 # Media
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.1-service
