@@ -73,6 +73,18 @@ function blob_fixup {
              patchelf --add-needed "libunwindstack-v28.so" "${2}"
              patchelf --add-needed "libbacktrace-v28.so" "${2}"
             ;;
+        vendor/lib/libnvram.so)
+             patchelf --add-needed "libbase-v28.so" "${2}"
+            ;;
+        vendor/lib/hw/audio.primary.mt6771.so)
+             patchelf --add-needed "libmedia_helper-v28.so" "${2}"
+            ;;
+        vendor/lib64/libnvram.so)
+             patchelf --add-needed "libbase-v28.so" "${2}"
+            ;;
+        vendor/lib64/hw/audio.primary.mt6771.so)
+             patchelf --add-needed "libmedia_helper-v28.so" "${2}"
+             ;;
     esac
 }
 if [ -z "${SRC}" ]; then

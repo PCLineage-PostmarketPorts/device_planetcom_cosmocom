@@ -3,6 +3,7 @@ lib64/libjni_pq.so
 lib64/vendor.mediatek.hardware.pq@2.0.so
 lib64/vendor.mediatek.hardware.pq@2.1.so
 lib64/vendor.mediatek.hardware.pq@2.2.so
+vendor/lib64/libfeature.stereo.provider.so
 
 # Charger
 bin/kpoc_charger
@@ -10,103 +11,106 @@ etc/init/kpoc_charger.rc
 lib/libshowlogo.so
 
 # Audio
-vendor/etc/audio_param/AudioParamOptions.xml
-vendor/etc/audio_param/BtInfo_AudioParam.xml
-vendor/etc/audio_param/BtInfo_ParamUnitDesc.xml
-vendor/etc/audio_param/HpImpedance_AudioParam.xml
-vendor/etc/audio_param/HpImpedance_ParamUnitDesc.xml
-vendor/etc/audio_param/MicInfo_AudioParam.xml
-vendor/etc/audio_param/MicInfo_ParamUnitDesc.xml
-vendor/etc/audio_param/PlaybackACF_AudioParam.xml
-vendor/etc/audio_param/PlaybackACF_ParamUnitDesc.xml
-vendor/etc/audio_param/Playback_AudioParam.xml
-vendor/etc/audio_param/PlaybackDRC_AudioParam.xml
-vendor/etc/audio_param/PlaybackDRC_ParamUnitDesc.xml
-vendor/etc/audio_param/PlaybackHCF_AudioParam.xml
-vendor/etc/audio_param/PlaybackHCF_ParamUnitDesc.xml
-vendor/etc/audio_param/Playback_ParamTreeView.xml
+vendor/etc/audio_policy.conf
 vendor/etc/audio_param/Playback_ParamUnitDesc.xml
-vendor/etc/audio_param/PlaybackVolAna_AudioParam.xml
-vendor/etc/audio_param/PlaybackVolAna_ParamUnitDesc.xml
-vendor/etc/audio_param/PlaybackVolDigi_AudioParam.xml
-vendor/etc/audio_param/PlaybackVolDigi_ParamUnitDesc.xml
-vendor/etc/audio_param/PlaybackVolUI_AudioParam.xml
-vendor/etc/audio_param/PlaybackVolUI_ParamUnitDesc.xml
-vendor/etc/audio_param/Record_AudioParam.xml
-vendor/etc/audio_param/RecordDMNR_AudioParam.xml
-vendor/etc/audio_param/RecordDMNR_ParamUnitDesc.xml
-vendor/etc/audio_param/RecordFIR_AudioParam.xml
-vendor/etc/audio_param/RecordFIR_ParamUnitDesc.xml
-vendor/etc/audio_param/Record_ParamTreeView.xml
-vendor/etc/audio_param/Record_ParamUnitDesc.xml
-vendor/etc/audio_param/RecordUI_AudioParam.xml
-vendor/etc/audio_param/RecordUI_ParamUnitDesc.xml
-vendor/etc/audio_param/RecordVol_AudioParam.xml
-vendor/etc/audio_param/RecordVol_ParamUnitDesc.xml
-vendor/etc/audio_param/RecordVolUI_AudioParam.xml
-vendor/etc/audio_param/RecordVolUI_ParamUnitDesc.xml
-vendor/etc/audio_param/RingbackVol_AudioParam.xml
+vendor/etc/audio_param/VoIPDMNR_AudioParam.xml
+vendor/etc/audio_param/Speech_ParamTreeView.xml
+vendor/etc/audio_param/SpeechDMNR_AudioParam.xml
+vendor/etc/audio_param/SmartPa_AudioParam.xml
+vendor/etc/audio_param/SpeechVol_AudioParam.xml
+vendor/etc/audio_param/PlaybackDRC_ParamUnitDesc.xml
+vendor/etc/audio_param/SpeechGeneral_AudioParam.xml
+vendor/etc/audio_param/AudioParamOptions.xml
+vendor/etc/audio_param/SpeechUI_ParamUnitDesc.xml
+vendor/etc/audio_param/PlaybackHCF_AudioParam.xml
+vendor/etc/audio_param/VolumeGainMapUL_AudioParam.xml
+vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/RingbackVol_ParamUnitDesc.xml
+vendor/etc/audio_param/SoundEnhancement_AudioParam.xml
+vendor/etc/audio_param/PlaybackVolUI_AudioParam.xml
+vendor/etc/audio_param/VoIPDMNR_ParamUnitDesc.xml
+vendor/etc/audio_param/RecordDMNR_ParamUnitDesc.xml
+vendor/etc/audio_param/VoIPv2General_ParamUnitDesc.xml
+vendor/etc/audio_param/Speech_ParamUnitDesc.xml
+vendor/etc/audio_param/SpeechMagiClarity_ParamUnitDesc.xml
+vendor/etc/audio_param/PlaybackVolAna_AudioParam.xml
+vendor/etc/audio_param/SpeechNetwork_ParamUnitDesc.xml
+vendor/etc/audio_param/VoIPGeneral_AudioParam.xml
+vendor/etc/audio_param/VoIPv2UI_AudioParam.xml
+vendor/etc/audio_param/RecordUI_AudioParam.xml
+vendor/etc/audio_param/USBCall_AudioParam.xml
+vendor/etc/audio_param/VoIP_ParamUnitDesc.xml
+vendor/etc/audio_param/PlaybackVolAna_ParamUnitDesc.xml
+vendor/etc/audio_param/VoIPUI_ParamUnitDesc.xml
+vendor/etc/audio_param/VoIPv2DMNR_ParamUnitDesc.xml
+vendor/etc/audio_param/Speech_AudioParam.xml
+vendor/etc/audio_param/SpeechNetwork_AudioParam.xml
+vendor/etc/audio_param/VOW_AudioParam.xml
+vendor/etc/audio_param/SpeechEchoRef_ParamUnitDesc.xml
+vendor/etc/audio_param/RecordVolUI_ParamUnitDesc.xml
+vendor/etc/audio_param/VoIPVol_AudioParam.xml
+vendor/etc/audio_param/PlaybackACF_ParamUnitDesc.xml
+vendor/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml
+vendor/etc/audio_param/PlaybackVolDigi_AudioParam.xml
+vendor/etc/audio_param/HpImpedance_AudioParam.xml
+vendor/etc/audio_param/PlaybackVolUI_ParamUnitDesc.xml
+vendor/etc/audio_param/USBDevice_ParamUnitDesc.xml
+vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
+vendor/etc/audio_param/RecordVol_ParamUnitDesc.xml
+vendor/etc/audio_param/HpImpedance_ParamUnitDesc.xml
+vendor/etc/audio_param/Playback_ParamTreeView.xml
+vendor/etc/audio_param/VoIPVol_ParamUnitDesc.xml
+vendor/etc/audio_param/SmartPa_ParamUnitDesc.xml
+vendor/etc/audio_param/Record_ParamTreeView.xml
+vendor/etc/audio_param/SoundEnhancement_ParamUnitDesc.xml
+vendor/etc/audio_param/VoIPGeneral_ParamUnitDesc.xml
+vendor/etc/audio_param/VoIPv2UI_ParamUnitDesc.xml
+vendor/etc/audio_param/MicInfo_AudioParam.xml
+vendor/etc/audio_param/VoIPv2DMNR_AudioParam.xml
+vendor/etc/audio_param/VoIP_AudioParam.xml
+vendor/etc/audio_param/Volume_ParamUnitDesc.xml
+vendor/etc/audio_param/RecordFIR_AudioParam.xml
+vendor/etc/audio_param/RecordUI_ParamUnitDesc.xml
+vendor/etc/audio_param/SpeechUI_AudioParam.xml
+vendor/etc/audio_param/SpeechVolUI_AudioParam.xml
+vendor/etc/audio_param/PlaybackDRC_AudioParam.xml
+vendor/etc/audio_param/SpeechDMNR_ParamUnitDesc.xml
+vendor/etc/audio_param/PlaybackVolDigi_ParamUnitDesc.xml
+vendor/etc/audio_param/PlaybackHCF_ParamUnitDesc.xml
+vendor/etc/audio_param/USBDevice_AudioParam.xml
+vendor/etc/audio_param/SpeechMagiClarity_AudioParam.xml
+vendor/etc/audio_param/VOW_ParamUnitDesc.xml
+vendor/etc/audio_param/RecordDMNR_AudioParam.xml
+vendor/etc/audio_param/VoIPv2General_AudioParam.xml
+vendor/etc/audio_param/VoIPUI_AudioParam.xml
+vendor/etc/audio_param/VolumeGainMap_AudioParam.xml
+vendor/etc/audio_param/VoIPVolUI_ParamUnitDesc.xml
+vendor/etc/audio_param/SpeechGeneral_ParamUnitDesc.xml
+vendor/etc/audio_param/BtInfo_ParamUnitDesc.xml
+vendor/etc/audio_param/Record_AudioParam.xml
+vendor/etc/audio_param/VoIP_ParamTreeView.xml
+vendor/etc/audio_param/SpeechEchoRef_AudioParam.xml
+vendor/etc/audio_param/USBCall_ParamUnitDesc.xml
+vendor/etc/audio_param/VoIPVolUI_AudioParam.xml
+vendor/etc/audio_param/Playback_AudioParam.xml
+vendor/etc/audio_param/SpeechVol_ParamUnitDesc.xml
+vendor/etc/audio_param/VoIPv2_ParamUnitDesc.xml
+vendor/etc/audio_param/BtInfo_AudioParam.xml
+vendor/etc/audio_param/RecordVol_AudioParam.xml
+vendor/etc/audio_param/PlaybackACF_AudioParam.xml
+vendor/etc/audio_param/Record_ParamUnitDesc.xml
 vendor/etc/audio_param/RingbackVolUI_AudioParam.xml
 vendor/etc/audio_param/RingbackVolUI_ParamUnitDesc.xml
-vendor/etc/audio_param/SoundEnhancement_AudioParam.xml
-vendor/etc/audio_param/SoundEnhancement_ParamUnitDesc.xml
-vendor/etc/audio_param/Speech_AudioParam.xml
+vendor/etc/audio_param/VoIPv2_AudioParam.xml
+vendor/etc/audio_param/MicInfo_ParamUnitDesc.xml
+vendor/etc/audio_param/RecordVolUI_AudioParam.xml
+vendor/etc/audio_param/RecordFIR_ParamUnitDesc.xml
+vendor/etc/audio_param/RingbackVol_AudioParam.xml
+vendor/etc/audio_param/VolumeGainMapUL_ParamUnitDesc.xml
+vendor/etc/audio_param/VoIPv2_ParamTreeView.xml
 vendor/etc/aurisys_config.xml
 vendor/lib64/lib_iir.so
 vendor/lib/lib_iir.so
-vendor/etc/audio_param/SpeechDMNR_AudioParam.xml
-vendor/etc/audio_param/SpeechDMNR_ParamUnitDesc.xml
-vendor/etc/audio_param/SpeechEchoRef_AudioParam.xml
-vendor/etc/audio_param/SpeechEchoRef_ParamUnitDesc.xml
-vendor/etc/audio_param/SpeechGeneral_AudioParam.xml
-vendor/etc/audio_param/SpeechGeneral_ParamUnitDesc.xml
-vendor/etc/audio_param/SpeechMagiClarity_AudioParam.xml
-vendor/etc/audio_param/SpeechMagiClarity_ParamUnitDesc.xml
-vendor/etc/audio_param/SpeechNetwork_AudioParam.xml
-vendor/etc/audio_param/SpeechNetwork_ParamUnitDesc.xml
-vendor/etc/audio_param/Speech_ParamTreeView.xml
-vendor/etc/audio_param/Speech_ParamUnitDesc.xml
-vendor/etc/audio_param/SpeechUI_AudioParam.xml
-vendor/etc/audio_param/SpeechUI_ParamUnitDesc.xml
-vendor/etc/audio_param/SpeechVol_AudioParam.xml
-vendor/etc/audio_param/SpeechVol_ParamUnitDesc.xml
-vendor/etc/audio_param/SpeechVolUI_AudioParam.xml
-vendor/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml
-vendor/etc/audio_param/USBCall_AudioParam.xml
-vendor/etc/audio_param/USBCall_ParamUnitDesc.xml
-vendor/etc/audio_param/USBDevice_AudioParam.xml
-vendor/etc/audio_param/USBDevice_ParamUnitDesc.xml
-vendor/etc/audio_param/VoIP_AudioParam.xml
-vendor/etc/audio_param/VoIPDMNR_AudioParam.xml
-vendor/etc/audio_param/VoIPDMNR_ParamUnitDesc.xml
-vendor/etc/audio_param/VoIPGeneral_AudioParam.xml
-vendor/etc/audio_param/VoIPGeneral_ParamUnitDesc.xml
-vendor/etc/audio_param/VoIP_ParamTreeView.xml
-vendor/etc/audio_param/VoIP_ParamUnitDesc.xml
-vendor/etc/audio_param/VoIPUI_AudioParam.xml
-vendor/etc/audio_param/VoIPUI_ParamUnitDesc.xml
-vendor/etc/audio_param/VoIPv2_AudioParam.xml
-vendor/etc/audio_param/VoIPv2DMNR_AudioParam.xml
-vendor/etc/audio_param/VoIPv2DMNR_ParamUnitDesc.xml
-vendor/etc/audio_param/VoIPv2General_AudioParam.xml
-vendor/etc/audio_param/VoIPv2General_ParamUnitDesc.xml
-vendor/etc/audio_param/VoIPv2_ParamTreeView.xml
-vendor/etc/audio_param/VoIPv2_ParamUnitDesc.xml
-vendor/etc/audio_param/VoIPv2UI_AudioParam.xml
-vendor/etc/audio_param/VoIPv2UI_ParamUnitDesc.xml
-vendor/etc/audio_param/VoIPVol_AudioParam.xml
-vendor/etc/audio_param/VoIPVol_ParamUnitDesc.xml
-vendor/etc/audio_param/VoIPVolUI_AudioParam.xml
-vendor/etc/audio_param/VoIPVolUI_ParamUnitDesc.xml
-vendor/etc/audio_param/Volume_AudioParam.xml
-vendor/etc/audio_param/VolumeGainMap_AudioParam.xml
-vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
-vendor/etc/audio_param/VolumeGainMapUL_AudioParam.xml
-vendor/etc/audio_param/VolumeGainMapUL_ParamUnitDesc.xml
-vendor/etc/audio_param/Volume_ParamUnitDesc.xml
-vendor/etc/audio_param/VOW_AudioParam.xml
-vendor/etc/audio_param/VOW_ParamUnitDesc.xml
 vendor/etc/default_volume_tables.xml
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib64/lib_speech_enh.so
@@ -141,6 +145,8 @@ vendor/lib64/libaudiotoolkit_vendor.so
 
 # Audio-Hardware
 vendor/lib/hw/audio.primary.mt6771.so
+vendor/lib/hw/sound_trigger.primary.mt6771.so
+vendor/lib64/hw/sound_trigger.primary.mt6771.so
 vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libcvsd_mtk.so
@@ -165,8 +171,6 @@ vendor/lib/hw/audio.usb.mt6771.so
 vendor/lib64/hw/audio.primary.mt6771.so
 vendor/lib64/hw/audio.r_submix.mt6771.so
 vendor/lib64/hw/audio.usb.mt6771.so
-vendor/etc/init/android.hardware.audio@4.0-service-mediatek.rc
-vendor/bin/hw/android.hardware.audio@4.0-service-mediatek
 vendor/lib/hw/android.hardware.audio@4.0-impl-mediatek.so
 vendor/lib64/vendor.mediatek.hardware.audio@4.1.so
 vendor/lib64/hw/android.hardware.audio@4.0-impl-mediatek.so
@@ -174,6 +178,8 @@ vendor/lib/vendor.mediatek.hardware.audio@4.1.so
 vendor/bin/audiocmdservice_atci
 vendor/etc/aurisys_param/Speech_AudioParam.xml
 vendor/etc/init/audiocmdservice_atci.rc
+vendor/lib/libaudiosetting.so
+vendor/lib64/libaudiosetting.so
 
 # Bluetooth
 vendor/lib/libbluetoothem_mtk.so
@@ -195,6 +201,8 @@ vendor/lib64/libbt-vendor.so
 
 # Camera
 vendor/bin/hw/camerahalserver
+vendor/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so
+vendor/lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
 vendor/lib64/libacdk.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libdpframework.so
@@ -518,6 +526,7 @@ vendor/lib64/hw/hwcomposer.mt6771.so
 vendor/lib64/libpq_prot.so
 vendor/lib/libpq_prot.so
 vendor/lib64/hw/memtrack.mt6771.so
+vendor/lib64/libui_ext.so
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.mt6771.so
@@ -560,6 +569,8 @@ vendor/lib/hw/libSoftGatekeeper.so
 vendor/lib64/hw/gatekeeper.trustkernel.so
 vendor/lib64/hw/gatekeeper.trustkernel.so:vendor/lib64/hw/gatekeeper.mt6771.so
 vendor/lib64/hw/libSoftGatekeeper.so
+vendor/lib/libteec.so
+vendor/lib64/libteec.so
 
 # Graphics
 vendor/lib/egl/egl.cfg
@@ -718,6 +729,7 @@ vendor/lib64/libpowerhal.so
 vendor/lib64/libpowerhalwrap_vendor.so
 
 # Radio
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/bin/hw/vendor.mediatek.hardware.log@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/rild.rc
@@ -883,6 +895,7 @@ vendor/bin/wmt_launcher
 vendor/etc/init/init_connectivity.rc
 vendor/bin/wmt_loader
 vendor/etc/partition_permission.sh
+vendor/etc/init/init.cccimdinit.rc
 
 # AEE
 vendor/bin/aeev
@@ -912,3 +925,9 @@ vendor/lib/libneuropilot_hal_utils.so
 vendor/lib/libvt_custom.so
 vendor/lib64/libmmprofile.so
 vendor/lib64/libneuropilot_hal_utils.so
+vendor/lib/hw/dfps.mt6771.so
+vendor/lib64/hw/dfps.mt6771.so
+vendor/lib/hw/lights.mt6771.so
+vendor/lib64/hw/lights.mt6771.so
+vendor/lib64/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
+vendor/lib/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
