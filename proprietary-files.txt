@@ -166,11 +166,11 @@ vendor/etc/init/gsm0710muxd.rc
 vendor/lib/libladder.so
 vendor/lib/libccci_util.so
 vendor/lib/libaedv.so
-vendor/lib/hw/audio.r_submix.mt6771.so
 vendor/lib/hw/audio.usb.mt6771.so
 vendor/lib64/hw/audio.primary.mt6771.so
-vendor/lib64/hw/audio.r_submix.mt6771.so
 vendor/lib64/hw/audio.usb.mt6771.so
+vendor/etc/init/android.hardware.audio@4.0-service-mediatek.rc
+vendor/bin/hw/android.hardware.audio@4.0-service-mediatek
 vendor/lib/hw/android.hardware.audio@4.0-impl-mediatek.so
 vendor/lib64/vendor.mediatek.hardware.audio@4.1.so
 vendor/lib64/hw/android.hardware.audio@4.0-impl-mediatek.so
@@ -718,6 +718,8 @@ vendor/lib/vendor.mediatek.hardware.power@2.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.power@2.0-impl.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
+vendor/etc/init/vendor.mediatek.hardware.power@2.0-init.rc
+vendor/etc/init/vendor.mediatek.hardware.power@2.0-service.rc
 
 # Power (Libraries)
 vendor/lib/libpowerhal.so
@@ -908,6 +910,7 @@ vendor/bin/aee_dumpstatev
 vendor/etc/aee-config
 vendor/etc/init/aee_aedv.rc
 vendor/etc/init/aee_aedv64.rc
+vendor/lib/libmrdumpv.so
 
 # Misc
 vendor/data/misc/ProjectConfig.mk
@@ -929,5 +932,9 @@ vendor/lib/hw/dfps.mt6771.so
 vendor/lib64/hw/dfps.mt6771.so
 vendor/lib/hw/lights.mt6771.so
 vendor/lib64/hw/lights.mt6771.so
+vendor/lib/hw/android.hardware.light@2.0-impl-mediatek.so
+vendor/lib64/hw/android.hardware.light@2.0-impl-mediatek.so
 vendor/lib64/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
+vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc
+vendor/etc/init/vendor.mediatek.hardware.gnss@1.1-service.rc

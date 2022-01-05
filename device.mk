@@ -44,7 +44,12 @@ PRODUCT_PACKAGES += \
     init.sensor_1_0.rc \
     fstab.mt6771 \
     ueventd.mt6771.rc \
-    init.logger.rc 
+    init.logger.rc \
+    factory_init.project.rc \
+    factory_init.rc \
+    init.aee.rc \
+    init.project.rc
+     
 
 # Permissions
 PRODUCT_COPY_FILES += \
