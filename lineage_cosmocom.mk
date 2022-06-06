@@ -25,7 +25,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/planetcom/cosmocom/device.mk)
 
 PRODUCT_BRAND := planetcom
-PRODUCT_DEVICE := Cosmo_Communicator
+PRODUCT_DEVICE := cosmocom
 PRODUCT_MANUFACTURER := Planet Computers
 PRODUCT_NAME := lineage_Cosmo_Communicator
 PRODUCT_MODEL := Cosmo Communicator
