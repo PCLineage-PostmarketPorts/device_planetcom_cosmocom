@@ -26,7 +26,7 @@ $(call inherit-product, device/planetcom/cosmocom/device.mk)
 
 PRODUCT_BRAND := planetcom
 PRODUCT_DEVICE := cosmocom
-PRODUCT_MANUFACTURER := Cosmo
-PRODUCT_NAME := lineage_cosmocom
-PRODUCT_MODEL := Cosmo
+PRODUCT_MANUFACTURER := Planet Computers
+PRODUCT_NAME := planet_cosmocom
+PRODUCT_MODEL := Cosmo Communicator
 
