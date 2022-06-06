@@ -118,3 +118,5 @@ VENDOR_SECURITY_PATCH := 2020-11-05
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := false
+
+TARGET_OTA_ASSERT := cosmocom
