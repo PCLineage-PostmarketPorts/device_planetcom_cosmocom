@@ -132,12 +132,6 @@
     <transport/>
     <version>1.0</version>
   </hal>
-  <vendor-ndk>
-    <version>28</version>
-  </vendor-ndk>
-  <system-sdk>
-    <version>28</version>
-  </system-sdk>
   <hal format="hidl">
     <name>android.hardware.drm</name>
     <transport>hwbinder</transport>
