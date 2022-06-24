@@ -36,7 +36,7 @@
     <version>2.1</version>
     <interface>
       <name>IComposer</name>
-      <instance>vr</instance>
+      <instance>default</instance>
     </interface>
     <fqname>@2.1::IComposer/vr</fqname>
   </hal>
