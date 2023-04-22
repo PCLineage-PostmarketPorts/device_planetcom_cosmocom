@@ -1,5 +1,154 @@
 <?xml version="1.0"?>
-<manifest version="1.0" type="device" target-level="3">
+<manifest type="device" version="1.0" target-level="3">
+  <hal format="hidl" override="true">
+    <name>android.hardware.radio</name>
+    <transport>hwbinder</transport>
+    <version>1.2</version>
+    <interface>
+      <name>IRadio</name>
+      <instance>slot1</instance>
+      <instance>slot2</instance>
+      <instance>imsrild1</instance>
+      <instance>imsrild2</instance>
+      <instance>se1</instance>
+      <instance>se2</instance>
+    </interface>
+    <interface>
+      <name>ISap</name>
+      <instance>slot1</instance>
+      <instance>slot2</instance>
+    </interface>
+  </hal>
+  <hal format="hidl" override="true">
+    <name>vendor.mediatek.hardware.radio</name>
+    <transport>hwbinder</transport>
+    <version>3.20</version>
+    <interface>
+      <name>IRadio</name>
+      <instance>slot1</instance>
+      <instance>slot2</instance>
+      <instance>imsrild1</instance>
+      <instance>imsrild2</instance>
+      <instance>se1</instance>
+      <instance>se2</instance>
+    </interface>
+    <interface>
+      <name>ISap</name>
+      <instance>slot1</instance>
+      <instance>slot2</instance>
+    </interface>
+  </hal>
+  <hal format="hidl" override="true">
+    <name>android.hardware.radio.config</name>
+    <transport>hwbinder</transport>
+    <version>1.0</version>
+    <interface>
+      <name>IRadioConfig</name>
+      <instance>default</instance>
+    </interface>
+  </hal>
+  <hal format="hidl" override="true">
+    <name>android.hardware.radio</name>
+    <transport>hwbinder</transport>
+    <version>1.2</version>
+    <interface>
+      <name>IRadio</name>
+      <instance>slot1</instance>
+      <instance>slot2</instance>
+      <instance>slot3</instance>
+      <instance>slot4</instance>
+      <instance>imsrild1</instance>
+      <instance>imsrild2</instance>
+      <instance>imsrild3</instance>
+      <instance>imsrild4</instance>
+      <instance>se1</instance>
+      <instance>se2</instance>
+      <instance>se3</instance>
+      <instance>se4</instance>
+    </interface>
+    <interface>
+      <name>ISap</name>
+      <instance>slot1</instance>
+      <instance>slot2</instance>
+      <instance>slot3</instance>
+      <instance>slot4</instance>
+    </interface>
+  </hal>
+  <hal format="hidl" override="true">
+    <name>vendor.mediatek.hardware.radio</name>
+    <transport>hwbinder</transport>
+    <version>3.20</version>
+    <interface>
+      <name>IRadio</name>
+      <instance>slot1</instance>
+      <instance>slot2</instance>
+      <instance>slot3</instance>
+      <instance>slot4</instance>
+      <instance>imsrild1</instance>
+      <instance>imsrild2</instance>
+      <instance>imsrild3</instance>
+      <instance>imsrild4</instance>
+      <instance>se1</instance>
+      <instance>se2</instance>
+      <instance>se3</instance>
+      <instance>se4</instance>
+    </interface>
+    <interface>
+      <name>ISap</name>
+      <instance>slot1</instance>
+      <instance>slot2</instance>
+      <instance>slot3</instance>
+      <instance>slot4</instance>
+    </interface>
+  </hal>
+  <hal format="hidl" override="true">
+    <name>android.hardware.radio.config</name>
+    <transport>hwbinder</transport>
+    <version>1.0</version>
+    <interface>
+      <name>IRadioConfig</name>
+      <instance>default</instance>
+    </interface>
+  </hal>
+  <hal format="hidl" override="true">
+    <name>android.hardware.radio</name>
+    <transport>hwbinder</transport>
+    <version>1.2</version>
+    <interface>
+      <name>IRadio</name>
+      <instance>slot1</instance>
+      <instance>imsrild1</instance>
+      <instance>se1</instance>
+    </interface>
+    <interface>
+      <name>ISap</name>
+      <instance>slot1</instance>
+    </interface>
+  </hal>
+  <hal format="hidl" override="true">
+    <name>vendor.mediatek.hardware.radio</name>
+    <transport>hwbinder</transport>
+    <version>3.20</version>
+    <interface>
+      <name>IRadio</name>
+      <instance>slot1</instance>
+      <instance>imsrild1</instance>
+      <instance>se1</instance>
+    </interface>
+    <interface>
+      <name>ISap</name>
+      <instance>slot1</instance>
+    </interface>
+  </hal>
+  <hal format="hidl" override="true">
+    <name>android.hardware.radio.config</name>
+    <transport>hwbinder</transport>
+    <version>1.0</version>
+    <interface>
+      <name>IRadioConfig</name>
+      <instance>default</instance>
+    </interface>
+  </hal>
   <hal format="hidl">
     <name>android.frameworks.displayservice</name>
     <transport>hwbinder</transport>
@@ -29,16 +178,6 @@
       <instance>default</instance>
     </interface>
     <fqname>@1.0::ISensorManager/default</fqname>
-  </hal>
-  <hal format="hidl">
-    <name>android.hardware.graphics.composer</name>
-    <transport>hwbinder</transport>
-    <version>2.1</version>
-    <interface>
-      <name>IComposer</name>
-      <instance>default</instance>
-    </interface>
-    <fqname>@2.1::IComposer/vr</fqname>
   </hal>
   <hal format="hidl" override="true">
     <name>android.hardware.health</name>
@@ -109,6 +248,67 @@
     <transport/>
     <version>1.0</version>
   </hal>
+  <vendor-ndk>
+    <version>28</version>
+  </vendor-ndk>
+  <system-sdk>
+    <version>28</version>
+  </system-sdk>
+  <hal format="hidl" override="true">
+    <name>android.hardware.radio</name>
+    <transport>hwbinder</transport>
+    <version>1.2</version>
+    <interface>
+      <name>IRadio</name>
+      <instance>slot1</instance>
+      <instance>slot2</instance>
+      <instance>slot3</instance>
+      <instance>imsrild1</instance>
+      <instance>imsrild2</instance>
+      <instance>imsrild3</instance>
+      <instance>se1</instance>
+      <instance>se2</instance>
+      <instance>se3</instance>
+    </interface>
+    <interface>
+      <name>ISap</name>
+      <instance>slot1</instance>
+      <instance>slot2</instance>
+      <instance>slot3</instance>
+    </interface>
+  </hal>
+  <hal format="hidl" override="true">
+    <name>vendor.mediatek.hardware.radio</name>
+    <transport>hwbinder</transport>
+    <version>3.20</version>
+    <interface>
+      <name>IRadio</name>
+      <instance>slot1</instance>
+      <instance>slot2</instance>
+      <instance>slot3</instance>
+      <instance>imsrild1</instance>
+      <instance>imsrild2</instance>
+      <instance>imsrild3</instance>
+      <instance>se1</instance>
+      <instance>se2</instance>
+      <instance>se3</instance>
+    </interface>
+    <interface>
+      <name>ISap</name>
+      <instance>slot1</instance>
+      <instance>slot2</instance>
+      <instance>slot3</instance>
+    </interface>
+  </hal>
+  <hal format="hidl" override="true">
+    <name>android.hardware.radio.config</name>
+    <transport>hwbinder</transport>
+    <version>1.0</version>
+    <interface>
+      <name>IRadioConfig</name>
+      <instance>default</instance>
+    </interface>
+  </hal>
   <hal format="hidl">
     <name>android.hardware.audio</name>
     <transport>hwbinder</transport>
@@ -159,6 +359,16 @@
     </interface>
     <fqname>@2.4::ICameraProvider/internal/0</fqname>
   </hal>
+<!--  <hal format="hidl">
+    <name>android.hardware.cas</name>
+    <transport>hwbinder</transport>
+    <version>1.0</version>
+    <interface>
+      <name>IMediaCasService</name>
+      <instance>default</instance>
+    </interface>
+    <fqname>@1.0::IMediaCasService/default</fqname>
+  </hal>-->
   <hal format="hidl">
     <name>android.hardware.configstore</name>
     <transport>hwbinder</transport>
@@ -217,6 +427,16 @@
       <instance>default</instance>
     </interface>
     <fqname>@2.0::IAllocator/default</fqname>
+  </hal>
+  <hal format="hidl">
+    <name>android.hardware.graphics.composer</name>
+    <transport>hwbinder</transport>
+    <version>2.1</version>
+    <interface>
+      <name>IComposer</name>
+      <instance>default</instance>
+    </interface>
+    <fqname>@2.1::IComposer/default</fqname>
   </hal>
   <hal format="hidl">
     <name>android.hardware.graphics.mapper</name>
@@ -607,12 +827,12 @@
   <hal format="hidl">
     <name>vendor.mediatek.hardware.mms</name>
     <transport>hwbinder</transport>
-    <version>1.1</version>
+    <version>1.5</version>
     <interface>
       <name>IMms</name>
       <instance>default</instance>
     </interface>
-    <fqname>@1.1::IMms/default</fqname>
+    <fqname>@1.5::IMms/default</fqname>
   </hal>
   <hal format="hidl">
     <name>vendor.mediatek.hardware.mtkcodecservice</name>
@@ -741,4 +961,7 @@
     </interface>
     <fqname>@1.0::INxpNfc/default</fqname>
   </hal>
+<!--  <sepolicy>
+    <version>28.0</version>
+  </sepolicy> -->
 </manifest>
